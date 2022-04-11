@@ -49,7 +49,7 @@ jobs:
     - name: Build examples with defaults
       run: cargo build --examples --verbose ${{ matrix.features }}
       # Testing on the host target
-    - name: Build with defaults
+    - name: Build for AVR (Arduino Uno)
       run: cargo +nightly-2021-01-07 build --verbose --target avr-specs/avr-atmega328p.json ${{ matrix.features }}
     - name: Clean local cargo-config
       run: rm -f .cargo/config.toml
