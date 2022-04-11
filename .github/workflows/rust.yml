@@ -49,6 +49,8 @@ jobs:
     - name: Build examples with defaults
       run: cargo build --examples --verbose ${{ matrix.features }}
       # Testing on the host target
+    - name: Build with defaults
+      run: cargo +nightly-2021-01-07 build --verbose ${{ matrix.features }}
     - name: Clean local cargo-config
       run: rm -f .cargo/config.toml
     - name: Run tests
