@@ -96,7 +96,7 @@
 //!     // byte array, i.e. a `PmString<18>`.
 //!     static progmem string TEXT = "Hello 大賢者";
 //!     // text too large to fit in the RAM of a microcontroller
-//!     static progmem string LOVECRAFT = include_str!("lovecraft.txt");
+//!     static progmem string LOVECRAFT = include_str!("../examples/test_text.txt");
 //! }
 //!
 //! // You can load it all at once (like a `ProgMem`)
